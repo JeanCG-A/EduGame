@@ -1,0 +1,176 @@
+.contenidos-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.contenidos-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.contenidos-titulo {
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.crear-contenido-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.7rem 1.4rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+}
+
+.crear-contenido-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
+.crear-contenido-exit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.25rem;
+  border-radius: 9999px;
+  background: #eb2525;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.contenidos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Estilo para el Link que envuelve la tarjeta */
+.contenido-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Estilos de la tarjeta */
+.contenido-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Efecto hover en el contenedor de la tarjeta */
+.contenido-link:hover .contenido-card {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-color: #d1d5db;
+}
+
+/* Estilo para tarjeta publicada */
+.contenido-card.publicado {
+  border-color: #86efac;
+  background: #f0fdf4;
+}
+
+/* Efecto hover para tarjeta publicada */
+.contenido-link:hover .contenido-card.publicado {
+  border-color: #10b981;
+  background: #dcfce7;
+}
+
+.card-titulo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.card-info {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.card-descripcion {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis; 
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.badge-tipo {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.badge-modulo {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.badge-publicado {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.contenidos-mensaje {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+.contenidos-mensaje.error {
+  color: #ef4444;
+}
+
+.contenidos-vacio {
+  text-align: center;
+  color: #6b7280;
+  font-size: 1.1rem;
+  padding: 3rem 2rem;
+  background: #f9fafb;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
