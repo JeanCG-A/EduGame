@@ -1,0 +1,85 @@
+.crear-contenido-container {
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.crear-contenido-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.crear-contenido-card h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #111827;
+}
+
+.crear-contenido-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.crear-contenido-form label {
+  display: grid;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.crear-contenido-form input,
+.crear-contenido-form textarea,
+.crear-contenido-form select {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
+  color: #111827;
+  background: #f9fafb;
+}
+
+.crear-contenido-form textarea {
+  resize: vertical;
+}
+
+.form-error,
+.form-success {
+  padding: 0.9rem 1rem;
+  border-radius: 0.9rem;
+  font-size: 0.95rem;
+}
+
+.form-error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.form-success {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.submit-btn {
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-weight: 700;
+  padding: 0.95rem 1.2rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: #1d4ed8;
+}
