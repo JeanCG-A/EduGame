@@ -1,0 +1,181 @@
+/* Importando fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Reseteo básico para evitar márgenes del navegador */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Fondo sutil con gradiente simulando el desenfoque de tu imagen */
+  background: linear-gradient(135deg, #e0f2f1 0%, #f8fafc 50%, #e8f5e9 100%);
+  font-family: 'Inter', sans-serif;
+  padding: 1rem;
+}
+
+.login-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  padding: 2.5rem 2.5rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.25rem;
+  /* El color del birrete de tu imagen (azul a verde) */
+  background: linear-gradient(135deg, #007bff 0%, #00b050 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 176, 80, 0.25);
+}
+
+.logo-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.login-header h1 {
+  font-size: 1.5rem;
+  color: #111827;
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+}
+
+.login-header p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.error-message {
+  background: #fef2f2;
+  color: #ef4444;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border: 1px solid #fecaca;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.input-wrapper {
+   position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: #9ca3af;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.login-form .input-wrapper input {
+  width: 100%;
+  padding: 12px 12px 12px 50px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #1f2937;
+  transition: all 0.2s ease;
+  font-family: inherit;
+ 
+}
+
+.login-form .input-wrapper input:focus {
+  outline: none;
+  border-color: #00b050;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(0, 176, 80, 0.1);
+}
+
+.login-form .input-wrapper input::placeholder {
+  color: #d1d5db;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.875rem;
+  background: #00b050; /* Verde brillante principal */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  font-family: inherit;
+}
+
+.login-btn:hover:not(:disabled) {
+  background: #009643;
+}
+
+.login-btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.login-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.login-footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.login-footer a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
